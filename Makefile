@@ -18,7 +18,7 @@ help:
 	@echo "  help           	Return this message with usage instructions."
 	@echo "  install        	Will install the dependencies and create a virtual environment."
 	@echo "  dev-install    	Will install the dev dependencies too."
-	@echo "  run <folder_name>  Runs GPT Engineer on the folder with the given name."
+	@echo "  run <folder_name>  Runs GPT Python Dev on the folder with the given name."
 
 dev-install: create-venv upgrade-pip install-dependencies install-pre-commit farewell
 
@@ -47,7 +47,7 @@ farewell:
 	@echo -e "$(COLOR_GREEN)All done!$(COLOR_RESET)"
 
 run:
-	@echo -e "$(COLOR_CYAN)Running GPT Engineer on $(COLOR_GREEN)$(name)$(COLOR_CYAN) folder...$(COLOR_RESET)" && \
+	@echo -e "$(COLOR_CYAN)Running GPT Python Dev on $(COLOR_GREEN)$(name)$(COLOR_CYAN) folder...$(COLOR_RESET)" && \
 	source venv/bin/activate && \
-	python -m gpt_engineer.main $(name)
+	python -m gpt_python_dev.main $(name)
 

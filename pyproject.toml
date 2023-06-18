@@ -2,7 +2,7 @@
 requires = ["setuptools", "wheel"]
 
 [project]
-name = "gpt-engineer"
+name = "gpt-python-dev"
 version = "0.0.1"
 description = "Specify what you want it to build, the AI asks for clarification, and then builds it."
 readme = "README.md"
@@ -11,14 +11,15 @@ dependencies = [
   'black == 23.3.0',
   'openai == 0.27.8',
   'ruff == 0.0.272',
-  'typer == 0.9.0'
+  'typer == 0.9.0',
+  'python-dotenv == 1.0.0'
 ]
 
 [project.scripts]
-gpt-engineer = 'gpt_engineer.main:app'
+gpt-python-dev = 'gpt_python_dev.main:app'
 
 [tool.setuptools]
-packages = ["gpt_engineer"]
+packages = ["gpt_python_dev"]
 
 # https://beta.ruff.rs/docs/configuration/#using-rufftoml
 [tool.ruff]
@@ -46,8 +47,8 @@ exclude = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/AntonOsika/gpt-engineer"
-"Bug Tracker" = "https://github.com/AntonOsika/gpt-engineer/issues"
+"Homepage" = "https://github.com/AntonOsika/gpt-python-dev"
+"Bug Tracker" = "https://github.com/AntonOsika/gpt-python-dev/issues"
 
 
 [tool.ruff.isort]
@@ -63,6 +64,9 @@ section-order = [
 combine-as-imports = true
 split-on-trailing-comma = false
 lines-between-types = 1
+
+[tool.ruff.extend-per-file-ignores]
+"main.py" = ["E402"]
 
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
 [tool.black]
