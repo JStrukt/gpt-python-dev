@@ -1,7 +1,7 @@
-# GPT Engineer
+# GPT Python Dev
 **Specify what you want it to build, the AI asks for clarification, and then builds it.**
 
-GPT Engineer is made to be easy to adapt, extend, and make your agent learn how you want your code to look. It generates an entire codebase based on a prompt.
+GPT Python Dev is made to be easy to adapt, extend, and make your agent learn how you want your code to look. It generates an entire codebase based on a prompt.
 
 [Demo](https://twitter.com/antonosika/status/1667641038104674306) 👶🤖
 
@@ -24,7 +24,7 @@ GPT Engineer is made to be easy to adapt, extend, and make your agent learn how 
 **Run**:
 - Create a new empty folder with a `main_prompt` file in the `projects` folder (or copy the example folder `cp -r projects/example/ projects/my-new-project`)
 - Fill in the `main_prompt` in your new folder
-- Run `python -m gpt_engineer.main my-new-project`
+- Run `python -m gpt_python_dev.main my-new-project`
   - Optionally pass in `true` to delete the working files before running
 
 **Results**:
@@ -44,9 +44,9 @@ Editing the identity, and evolving the `main_prompt`, is currently how you make 
 Each step in `steps.py` will have its communication history with GPT4 stored in the logs folder, and can be rerun with `scripts/rerun_edited_message_logs.py`.
 
 ## Contributing
-If you want to contribute, please check out the [projects](https://github.com/AntonOsika/gpt-engineer/projects?query=is%3Aopen) or [issues tab](https://github.com/AntonOsika/gpt-engineer/issues) in the GitHub repo and please read the [contributing document](.github/CONTRIBUTING.md) on how to contribute.
+If you want to contribute, please check out the [projects](https://github.com/AntonOsika/gpt-python-dev/projects?query=is%3Aopen) or [issues tab](https://github.com/AntonOsika/gpt-python-dev/issues) in the GitHub repo and please read the [contributing document](.github/CONTRIBUTING.md) on how to contribute.
 
 
 ## High resolution example
 
-https://github.com/AntonOsika/gpt-engineer/assets/4467025/6e362e45-4a94-4b0d-973d-393a31d92d9b
+https://github.com/AntonOsika/gpt-python-dev/assets/4467025/6e362e45-4a94-4b0d-973d-393a31d92d9b

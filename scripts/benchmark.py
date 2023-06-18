@@ -32,7 +32,7 @@ def main(
                     "python",
                     "-u",  # Unbuffered output
                     "-m",
-                    "gpt_engineer.main",
+                    "gpt_python_dev.main",
                     bench_folder,
                     "--steps-config",
                     "benchmark",
@@ -61,7 +61,7 @@ def main(
                 [
                     "python",
                     "-m",
-                    "gpt_engineer.main",
+                    "gpt_python_dev.main",
                     bench_folder,
                     "--steps-config",
                     "execute_only",

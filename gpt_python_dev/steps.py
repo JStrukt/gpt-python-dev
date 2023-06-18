@@ -1,9 +1,9 @@
 import json
 import subprocess
 
-from gpt_engineer.ai import AI
-from gpt_engineer.chat_to_files import parse_chat, to_files
-from gpt_engineer.db import DBs
+from gpt_python_dev.ai import AI
+from gpt_python_dev.chat_to_files import parse_chat, to_files
+from gpt_python_dev.db import DBs
 
 
 def setup_sys_prompt(dbs):

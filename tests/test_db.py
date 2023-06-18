@@ -1,4 +1,4 @@
-from gpt_engineer.db import DB
+from gpt_python_dev.db import DB
 
 
 def test_db():

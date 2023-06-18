@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+
+load_dotenv()
 import json
 import logging
 import os
@@ -6,9 +9,9 @@ import shutil
 
 import typer
 
-from gpt_engineer.ai import AI
-from gpt_engineer.db import DB, DBs
-from gpt_engineer.steps import STEPS
+from gpt_python_dev.ai import AI
+from gpt_python_dev.db import DB, DBs
+from gpt_python_dev.steps import STEPS
 
 app = typer.Typer()
 
